@@ -16,15 +16,17 @@ Key math needed to perform Ridge Regression Loss on IDDL.
 ![[math-RRL.png]]
 ## Parameter Updating
 
+To update any parameter $\zeta_i$ is needed. This is the derivative of the loss function with respect to the embedded vector $v_i$. For ridge regression, $\zeta_i = -(h_i-Wv_i)^{T}W$
+
 #### Dictionary B
 
 Calculate gradient of dictionary B by
 
 ![[gradB calc]]
-where $\theta_k = \alpha_k + \beta_k$ ,  $r_k = \frac{\alpha_k}{\beta_k}$ , $Z_i=X_i^{-1}$ and $\zeta_i = -(h_i-Wv_i)^{T}W$
+where $\theta_k = \alpha_k + \beta_k$ ,  $r_k = \frac{\alpha_k}{\beta_k}$ and $Z_i=X_i^{-1}$
 
 > [!note]
-> Dictionary B are calculated in the SPD plane powered to the number of atoms.
+> Dictionary B are calculated in the SPD plane powered to the number of atoms (SPD tensor).
 
 #### Parameters α,β
 
@@ -34,6 +36,7 @@ where λ<sub>j</sub> refers to the j-th generalized eigenvalue of $X_i B_k^{-1}$
 Gradient of β is calculated based on dual symmetry if we replace:
 - α -> β
 - β -> α
+- eigenvalues of $X_i B_k^{-1}$ -> eigenvalues of $B_i X_k^{-1}$
 
 > [!note]
 > ABLD parameters are calculated in the euclidean plane.
@@ -53,8 +56,8 @@ Gradient of β is calculated based on dual symmetry if we replace:
 
 > [!note]
 > 1) Parallel computing is recommended for functions used in any gradient descends.
-> 2) initializing B usually consists of random samples from data based on atoms per  class
-> 3) it is recommended to initialize ABLD parameters with the Burg metric (α=1, β=1)
+> 2) Initializing B consists of random samples from data based on atoms per class in the demo code, logRiemannian kmeans is recommended.
+> 3) it is recommended to initialize ABLD parameters with the Burg metric (α=1, β=1).
 
 > [!important]
 > ABLD is non-smooth at the origin α, β -> 0. We resort to the limit of the divergence, which is the AIRM.

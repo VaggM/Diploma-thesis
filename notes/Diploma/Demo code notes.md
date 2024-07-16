@@ -13,17 +13,17 @@ Algorithm steps
   2) update parameters α, β
   3) update classifier W
 
-The inilization of the dictionary B is done by picking random samples per class based on how many atoms per class should consist it while the initialization of ABLD parameters is done by settings all elements to 1.
+The inilization of the dictionary B is done by picking random samples per class based on how many atoms per class should consist it (this is done in the demo, its not recommended) while the initialization of ABLD parameters is done by settings all elements to 1.
 
 > [!note]
-> The white papers are written based on IDDL-N and the code that Anoop Cherian used for it. So any math used in the paper is used directly in this IDDL variant while the other variants might use different math approaches to reach the same solution.
+> The papers are written based on IDDL-N and the code that Anoop Cherian used for it. So any math used in the paper is used directly in this IDDL variant while the other variants might use different math approaches to reach the same solution.
 ## Optimization Structures
 
-| Updated Variable     | Dictionary B                                                                                                                          | Parameters α, β                                                                                                                                             |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Manifold Structure   | $SPD^{n}$ manifold plane                                                                                                              | $R^{2n}$ euclidean plane                                                                                                                                    |
-| Optimization Cost    | RRL objective for current V                                                                                                           | RRL objective for current V                                                                                                                                 |
-| Gradient Calculation | Each atom's gradient is a \[dxd] matrix and given by<br><br>$gradB_k = \zeta_{i,k} * 2 gradB_k( D^{\alpha_k,\beta_k}(X_i \|\| B_k) )$ | After calculating all eigenvalues of $X_i B_k^{-1}$ the gradient for each parameter on the current atom is given by<br>![[Pasted image 20240418093326.png]] |
+| Updated Variable     | Dictionary B                                                                                                                          | Parameters α, β                                                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manifold Structure   | $SPD^{n}$ manifold plane                                                                                                              | $R^{2n}$ euclidean plane                                                                                                                                 |
+| Optimization Cost    | RRL objective for current V                                                                                                           | RRL objective for current V                                                                                                                              |
+| Gradient Calculation | Each atom's gradient is a \[dxd] matrix and given by<br><br>$gradB_k = \zeta_{i,k} * 2 gradB_k( D^{\alpha_k,\beta_k}(X_i \|\| B_k) )$ | After calculating all eigenvalues of $X_i B_k^{-1}$ the gradient for each parameter on the current atom is given by ![[Pasted image 20240716110747.png]] |
 
 > [!note]
 > 1) Parameters α, β are updated with RCG although being in the euclidean plane
@@ -32,19 +32,17 @@ The inilization of the dictionary B is done by picking random samples per class 
 > 4) When calculating eigenvalues for ABLD gradients a tensor E is used in code consisting of multiple matrixes that present the eigenvalues calculated for each input for one atom at a time
 
 > [!important]
-> 1) In any division in calculations an $\epsilon->0$ is added to prevent dividing by zero
-> 2) All eigenvalues have a lower bound  $\epsilon->0$
+> 1) In any division in calculations an $\epsilon > 0$ is added to prevent dividing by zero
+> 2) All eigenvalues have a lower bound  $\epsilon > 0$
 > 3) When calculating ABLD gradient we must make sure that the result is not nan
 > 4) When passing ABLD parameters in RCG we must use α, β within one vector of 2n elements since the manopt function updates only one variable
 > 5) In all codes parfor is used for doing parallel computations for RCG
 > 6) Gradient for dictionary B in all demo codes doesn't use the calculation method with Schur Decomposition that speeds up the process
 
 > [!warning]
-> 1) Gradient for β is calculated using the dual symmetry property but in code the eigenvalues are still calculated from $X_i B_k^{-1}$ instead of $B_k X_i^{-1}$
-> 2) The discontinuity case at the origin is not taken into account anywhere
+> The discontinuity case at the origin is not taken into account anywhere
 
 Below there is a list of changes in code when calculating other IDDL variants.
-
 ## IDDL-V changes
 
 This is the case where ABLD parameters are equal vectors.

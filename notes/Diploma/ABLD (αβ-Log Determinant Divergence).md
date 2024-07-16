@@ -26,7 +26,7 @@ Where λ<sub>i</sub> denotes  the i-th eigenvalue of XY<sup>-1</sup>.
 
 ## ABLD when α, β -> 0
 
-![[Pasted image 20240417123205.png]]
+![[Pasted image 20240716111337.png]]
 ## ABLD used in papers
 
 | Distance Metric | α, β values  |
@@ -38,7 +38,7 @@ Where λ<sub>i</sub> denotes  the i-th eigenvalue of XY<sup>-1</sup>.
 | IDDL-N          | α!=β vectors |
 
 > [!important]
-> Parameters α, β must always have the same sign except for the discontinuity case of α, β -> 0 . Making sure both are positive negates any sign issues.
+> Parameters α, β must always have the same sign to avoid and issues. Forcing them to be both positive negates this issue.
 
 
 

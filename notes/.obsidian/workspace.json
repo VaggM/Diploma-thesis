@@ -4,43 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "d403a18f6fc02355",
+        "id": "c86f64334e5f1eaa",
         "type": "tabs",
         "children": [
           {
-            "id": "a11f20b2f41e8a30",
+            "id": "9fd9ef2a4c260106",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diploma/Ridge Regression Loss.md",
+                "file": "Diploma/ABLD (αβ-Log Determinant Divergence).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "45ae05595a067091",
+            "id": "b41e438cc80aa507",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-13 16.39.36.excalidraw.md"
+                "file": "Moving forward.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
           {
-            "id": "2a72cae4e9f1403c",
+            "id": "b966aea7b1b92777",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 22.50.16.excalidraw.md"
+                "file": "Diploma/Riemannian Conjugate Gradient (RCG).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 22.50.16.excalidraw.md",
+                "file": "Moving forward.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 22.50.16.excalidraw.md",
+                "file": "Moving forward.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-14 22.50.16.excalidraw.md"
+                "file": "Moving forward.md"
               }
             }
           },
@@ -155,14 +159,6 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "db3a65e622dea4b0",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
               "state": {}
             }
           }
@@ -183,23 +179,39 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2a72cae4e9f1403c",
+  "active": "b41e438cc80aa507",
   "lastOpenFiles": [
+    "Diploma/Riemannian Conjugate Gradient (RCG).md",
+    "Moving forward.md",
+    "IDDL Summary.md",
+    "Diploma/Manopt book.md",
+    "Diploma/Ridge Regression Loss.md",
+    "refs/IDDL 2017.pdf",
+    "Diploma/ABLD (αβ-Log Determinant Divergence).md",
+    "screenshots/Pasted image 20240716111337.png",
+    "Diploma/Demo code notes.md",
+    "screenshots/Pasted image 20240716110747.png",
+    "screenshots/Pasted image 20240716110722.png",
+    "screenshots/gradB calc.md",
+    "screenshots/Pasted Image 20240716104858_655.png",
+    "refs/IDDL 2017 - Clustering.pdf",
+    "refs/IDDL 2022.pdf",
+    "screenshots/Pasted image 20240716104156.png",
+    "refs/αβ-logdet.pdf",
+    "refs/man opt book.pdf",
+    "refs/spectral projected gradient (SPG) descend algorithm.pdf",
+    "refs/BURG.pdf",
+    "refs/AIRM.pdf",
+    "Diploma/refs/IDDL 2017.pdf",
+    "refs",
+    "Diploma/Manifold Optimization Library.md",
+    "Diploma/Linear Algebra Tools.md",
     "Excalidraw/Drawing 2024-07-13 16.39.36.excalidraw.md",
     "Excalidraw/Drawing 2024-07-14 22.50.16.excalidraw.md",
-    "Diploma/Ridge Regression Loss.md",
-    "Diploma/IDDL Summary.md",
-    "Diploma/Diploma thesis - moving forward.md",
-    "Diploma/Demo code notes.md",
-    "Diploma/ABLD (αβ-Log Determinant Divergence).md",
-    "Diploma/Linear Algebra Tools.md",
-    "Diploma/Manifold Optimization Library.md",
-    "Diploma/Manopt book.md",
-    "Diploma/Riemannian Conjugate Gradient (RCG).md",
     "Pasted Image 20240707164039_064.png",
     "Pasted Image 20240707155642_200.png",
     "IEEE/Xtreme 18.0 Section.md",
@@ -208,34 +220,17 @@
     "PythonOOP/10η Εργασία/Pasted image 20240612114321.png",
     "Pasted image 20240619114107.png",
     "Pasted image 20240619114122.png",
-    "Pasted image 20240619115452.png",
-    "PythonOOP/9η Εργασία/Pasted image 20240604155808.png",
     "PythonOOP/8η Εργασία/Αγορά Εργασίας 🏢.md",
     "Excalidraw/Drawing 2024-06-25 21.18.39.excalidraw.md",
     "Kebap mail vol 100.md",
     "PythonOOP/10η Εργασία/Πράξεις πολέμου ➕.md",
     "Python OOP Feedback.md",
     "PythonOOP/9η Εργασία/Pokemon battles!.md",
-    "PythonOOP/9η Εργασία/Pasted image 20240607120813.png",
-    "PythonOOP/9η Εργασία/Pasted image 20240607120847.png",
-    "Pasted image 20240612114221.png",
-    "PythonOOP/10η Εργασία",
     "Excalidraw/Drawing 2024-06-10 09.32.13.excalidraw.md",
     "Excalidraw/Drawing 2024-06-04 22.08.54.excalidraw.md",
-    "PythonOOP/9η Εργασία",
     "PythonOOP/Προαιρετικό Μάθημα/Python Notes - Προαιρετικό μάθημα.md",
-    "PythonOOP/8η Εργασία",
     "PythonOOP/7η Εργασία/Επισκευές ρομπότ 🧑‍🔧.md",
-    "PythonOOP/6η Εργασία/Κυνήγι θησαυρού! 🏝️.md",
-    "IEEEXtreme Countdown Info.md",
-    "PythonOOP/7η Εργασία",
-    "PythonOOP/6η Εργασία/Untitled",
     "Untitled.canvas",
-    "PythonOOP/6η Εργασία",
-    "PythonOOP/Προαιρετικό Μάθημα",
-    "PythonOOP/Προαιρετικό Μάθημα/screenshots",
-    "PythonOOP",
-    "IEEE",
     "Excalidraw/Untitled.canvas",
     "Untitled 1.canvas"
   ]
