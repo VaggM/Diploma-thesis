@@ -11,6 +11,7 @@ function [B, alphabeta, W, V] = IDDL_N(X_train, X_test, train_labels, test_label
     lam = params.lam;
     num_classes = numel(unique(train_labels));
     % Convert to cell from array
+    % squeeze is used to change dxdx1 to dxd for X{z}
     X = cell(size(X_train,3),1);
     for z = 1:size(X_train,3)
         X{z} = squeeze(X_train(:,:,z));
@@ -19,6 +20,7 @@ function [B, alphabeta, W, V] = IDDL_N(X_train, X_test, train_labels, test_label
     for z = 1:size(X_test,3)
         Xtest{z} = squeeze(X_test(:,:,z));
     end
+    % can change
     num_atoms = params.num_atoms_per_class * num_classes;
     H = generate_binary_class_matrix(train_labels); 
     B_init = initialize_atoms(X, train_labels, num_atoms)';

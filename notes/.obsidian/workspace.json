@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "0b05c458162566df",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "refs/IDDL 2022.pdf"
+              }
+            }
+          },
+          {
             "id": "b966aea7b1b92777",
             "type": "leaf",
             "state": {
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Moving forward.md",
+                "file": "refs/IDDL 2022.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Moving forward.md",
+                "file": "refs/IDDL 2022.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Moving forward.md"
+                "file": "refs/IDDL 2022.pdf"
               }
             }
           },
@@ -183,11 +193,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b41e438cc80aa507",
+  "active": "0b05c458162566df",
   "lastOpenFiles": [
-    "Diploma/Riemannian Conjugate Gradient (RCG).md",
-    "Moving forward.md",
+    "refs/IDDL 2017 - Clustering.pdf",
+    "refs/αβ-logdet.pdf",
     "IDDL Summary.md",
+    "Moving forward.md",
+    "Excalidraw/Drawing 2024-07-17 19.16.22.excalidraw.md",
+    "Pasted Image 20240717192018_221.png",
+    "Excalidraw",
+    "Diploma/Riemannian Conjugate Gradient (RCG).md",
     "Diploma/Manopt book.md",
     "Diploma/Ridge Regression Loss.md",
     "refs/IDDL 2017.pdf",
@@ -198,16 +213,13 @@
     "screenshots/Pasted image 20240716110722.png",
     "screenshots/gradB calc.md",
     "screenshots/Pasted Image 20240716104858_655.png",
-    "refs/IDDL 2017 - Clustering.pdf",
     "refs/IDDL 2022.pdf",
     "screenshots/Pasted image 20240716104156.png",
-    "refs/αβ-logdet.pdf",
     "refs/man opt book.pdf",
     "refs/spectral projected gradient (SPG) descend algorithm.pdf",
     "refs/BURG.pdf",
     "refs/AIRM.pdf",
     "Diploma/refs/IDDL 2017.pdf",
-    "refs",
     "Diploma/Manifold Optimization Library.md",
     "Diploma/Linear Algebra Tools.md",
     "Excalidraw/Drawing 2024-07-13 16.39.36.excalidraw.md",
@@ -219,7 +231,6 @@
     "Excalidraw/Drawing 2024-07-07 16.40.08.excalidraw.md",
     "PythonOOP/10η Εργασία/Pasted image 20240612114321.png",
     "Pasted image 20240619114107.png",
-    "Pasted image 20240619114122.png",
     "PythonOOP/8η Εργασία/Αγορά Εργασίας 🏢.md",
     "Excalidraw/Drawing 2024-06-25 21.18.39.excalidraw.md",
     "Kebap mail vol 100.md",
@@ -229,7 +240,6 @@
     "Excalidraw/Drawing 2024-06-10 09.32.13.excalidraw.md",
     "Excalidraw/Drawing 2024-06-04 22.08.54.excalidraw.md",
     "PythonOOP/Προαιρετικό Μάθημα/Python Notes - Προαιρετικό μάθημα.md",
-    "PythonOOP/7η Εργασία/Επισκευές ρομπότ 🧑‍🔧.md",
     "Untitled.canvas",
     "Excalidraw/Untitled.canvas",
     "Untitled 1.canvas"
