@@ -42,19 +42,37 @@
             }
           },
           {
+            "id": "bf8c160eb3b5a9fe",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
+          },
+          {
+            "id": "e5df6ce448277bf9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-07-24 14.58.31.excalidraw.md"
+              }
+            }
+          },
+          {
             "id": "b966aea7b1b92777",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Diploma/Riemannian Conjugate Gradient (RCG).md",
-                "mode": "source",
-                "source": false
+                "file": "refs/IDDL 2022.pdf"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -193,19 +211,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0b05c458162566df",
+  "active": "b966aea7b1b92777",
   "lastOpenFiles": [
+    "refs/IDDL 2017.pdf",
+    "refs/man opt book.pdf",
+    "refs/spectral projected gradient (SPG) descend algorithm.pdf",
+    "Moving forward.md",
+    "Untitled.md",
+    "Diploma/Riemannian Conjugate Gradient (RCG).md",
+    "Excalidraw/Drawing 2024-07-24 14.58.31.excalidraw.md",
     "refs/IDDL 2017 - Clustering.pdf",
     "refs/αβ-logdet.pdf",
     "IDDL Summary.md",
-    "Moving forward.md",
     "Excalidraw/Drawing 2024-07-17 19.16.22.excalidraw.md",
     "Pasted Image 20240717192018_221.png",
     "Excalidraw",
-    "Diploma/Riemannian Conjugate Gradient (RCG).md",
     "Diploma/Manopt book.md",
     "Diploma/Ridge Regression Loss.md",
-    "refs/IDDL 2017.pdf",
     "Diploma/ABLD (αβ-Log Determinant Divergence).md",
     "screenshots/Pasted image 20240716111337.png",
     "Diploma/Demo code notes.md",
@@ -215,8 +237,6 @@
     "screenshots/Pasted Image 20240716104858_655.png",
     "refs/IDDL 2022.pdf",
     "screenshots/Pasted image 20240716104156.png",
-    "refs/man opt book.pdf",
-    "refs/spectral projected gradient (SPG) descend algorithm.pdf",
     "refs/BURG.pdf",
     "refs/AIRM.pdf",
     "Diploma/refs/IDDL 2017.pdf",
@@ -238,8 +258,6 @@
     "Python OOP Feedback.md",
     "PythonOOP/9η Εργασία/Pokemon battles!.md",
     "Excalidraw/Drawing 2024-06-10 09.32.13.excalidraw.md",
-    "Excalidraw/Drawing 2024-06-04 22.08.54.excalidraw.md",
-    "PythonOOP/Προαιρετικό Μάθημα/Python Notes - Προαιρετικό μάθημα.md",
     "Untitled.canvas",
     "Excalidraw/Untitled.canvas",
     "Untitled 1.canvas"

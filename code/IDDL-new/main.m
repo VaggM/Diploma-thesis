@@ -36,11 +36,17 @@ load demo_dataset.mat
 params.iter = 3;
 params.num_atoms_per_class = 1;
 params.lam = 10;
+params.loss_func = @RRL;
+params.loss_func_gradV = @RRL_gradV;
+params.loss_param_initialize = @RRL_param_initialize;
+params.loss_param_update = @RRL_param_update;
+params.loss_class_accuracy = @RRL_class_accuracy;
+
 %% Run IDDL
 fprintf('\n\n')
 fprintf('Running IDDL...\n')
 fprintf('------------------------------------------------------------------\n')
-[BB, AB, W, V] = IDDL(X_train, X_test, train_labels, test_labels, params);
+[BB, ab, loss_params, V] = IDDL(X_train, X_test, train_labels, test_labels, params);
 
 
 

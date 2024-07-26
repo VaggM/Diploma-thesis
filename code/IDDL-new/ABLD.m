@@ -1,4 +1,4 @@
-function dist = abdiv(X, B, alpha, beta) 
+function dist = ABLD(X, B, alpha, beta) 
     try
         e = eig(X,B);  d=length(e); e(e<=1e-10)=1e-10;
     catch

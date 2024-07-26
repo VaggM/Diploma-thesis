@@ -1,4 +1,4 @@
-function B_init = initialize_atoms(X_train, train_labels, num_atoms)
+function B_init = IDDL_initialize_atoms(X_train, train_labels, num_atoms)
     num_classes = numel(unique(train_labels));
     B_init = cell(num_atoms,1);
     atom = 1;
